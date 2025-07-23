@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+			@layer base {
+				html {
+					font-family: "Poppins", sans-serif;
+				}
+			}
+		</style>
+		<!-- <script
+			src="./02-sync-blocking.js"
+			defer
+		></script> -->
+		<title>Asynchronous JavaScript</title>
+	</head>
+	<body class="grid w-dvw place-items-center min-h-dvh md:bg-amber-200">
+		<main
+			class="p-12 md:w-[75ch] bg-amber-200 flex flex-col h-60 justify-between items-center"
+		>
+			<h1 class="text-4xl font-bold text-center">Asynchronous JavaScript</h1>
+			<button
+				id="runCodeBtn"
+				class="relative overflow-hidden rounded-md bg-neutral-950 px-5 py-2.5 text-white transition-all duration-300 [transition-timing-function:cubic-bezier(0.175,0.885,0.32,1.275)] active:-translate-y-1 active:scale-x-90 active:scale-y-110 w-1/2 font-semibold text-xl"
+			>
+				Run Code
+			</button>
+		</main>
+		<script
+			src="./main.js"
+			type="module"
+		></script>
+	</body>
+</html>
