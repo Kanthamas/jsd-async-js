@@ -2,11 +2,10 @@ export const promiseAllOrders = () => {
 	console.log("📝 Starting all orders…");
 
 	// create promises each time the function runs
-	const pizza = new Promise(
-		(resolve, reject) =>
-			// 🧪 try swapping resolve/reject to test
-			setTimeout(() => resolve("🍕 Pizza is ready!"), 3000)
-		// setTimeout(() => reject("🍕 Pizza is not ready!"), 3000)
+	const pizza = new Promise((resolve, reject) =>
+		// 🧪 try swapping resolve/reject to test
+		// setTimeout(() => resolve("🍕 Pizza is ready!"), 3000)
+		setTimeout(() => reject("🍕 Pizza is not ready!"), 3000)
 	);
 
 	const drink = new Promise(

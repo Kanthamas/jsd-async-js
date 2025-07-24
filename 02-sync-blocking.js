@@ -1,5 +1,5 @@
 export const syncBlocking = () => {
-	const massiveNumber = 1_000_000_000n;
+	const massiveNumber = 1_000_000_000n; // 1000000000
 
 	const simulateMassiveTask = (number) => {
 		let result = 0n;

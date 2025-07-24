@@ -9,9 +9,9 @@ export const cbHell = () => {
 				console.log("Step 3: Oh no! What the (callback) hell! 😭");
 				setTimeout(() => {
 					console.log("Step 4: Thank the universe; it's finally over! 🤪");
-				}, 1000);
-			}, 1000);
-		}, 1000);
+				}, 4000);
+			}, 3000);
+		}, 2000);
 	}, 1000);
 
 	console.log("End");

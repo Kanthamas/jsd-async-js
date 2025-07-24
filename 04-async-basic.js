@@ -1,11 +1,16 @@
 export const asyncBasic = () => {
-	console.log(`Start`);
+	console.log(`Start`); // A
 
 	setTimeout(() => {
-		console.log(`Wait for 1 second -- I'm back 😎`);
+		// setTimeout(callback, delay [ms])
+		console.log(`Wait for 1 second -- I'm back 😎`); // B
 	}, 1000);
 
-	console.log(`End`);
+	// setTimeout(() => console.log(1), 1000);
+	// setTimeout(() => console.log(2), 1000);
+	// setTimeout(() => console.log(3), 0);
+
+	console.log(`End`); // C
 };
 
 // asyncBasic();
